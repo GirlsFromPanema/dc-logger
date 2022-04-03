@@ -1,0 +1,25 @@
+{
+  "name": "logger",
+  "version": "1.0.0",
+  "description": "Logs the IP of a user into a discord channel",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc index.ts",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q build/index.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "cross-fetch": "^3.1.5",
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "concurrently": "^7.1.0",
+    "nodemon": "^2.0.15"
+  }
+}
